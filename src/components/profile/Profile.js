@@ -2,12 +2,20 @@ import React from 'react';
 import Description from './Description';
 import Stats from './Stats';
 
-const Profile = ({ name, tag, location, avatar, stats }) => (
-  <>
-    <Description name={name} tag={tag} location={location} avatar={avatar} />
+const Profile = ({ user }) => {
+  const { name, tag, location, avatar, stats } = user;
 
-    <Stats stats={stats} />
-  </>
-);
+  return (
+    <>
+      <Description name={name} tag={tag} location={location} avatar={avatar} />
+
+      <Stats
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}
+      />
+    </>
+  );
+};
 
 export default Profile;
