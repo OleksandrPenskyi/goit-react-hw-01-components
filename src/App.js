@@ -5,10 +5,10 @@ import FriendList from './components/friend-list/FriendList';
 import Statistics from './components/statistics/Statistics';
 import TransactionHistory from './components/transaction-history/TransactionHistory';
 
-import friends from './friends.json';
-import statisticalData from './statistical-data.json';
-import user from './user.json';
-import transaction from './transactions.json';
+import friends from './data/friends.json';
+import statisticalData from './data/statistical-data.json';
+import user from './data/user.json';
+import transaction from './data/transactions.json';
 
 const App = () => {
   return (
