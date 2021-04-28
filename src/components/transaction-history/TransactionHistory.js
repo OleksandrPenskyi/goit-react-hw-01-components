@@ -1,9 +1,10 @@
 import React from 'react';
 import THead from './THead';
 import TBody from './TBody';
+import style from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ transaction }) => (
-  <table className="transaction-history">
+  <table className={style.table}>
     <THead />
 
     <TBody transaction={transaction} />

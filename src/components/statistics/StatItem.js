@@ -1,9 +1,10 @@
 import React from 'react';
+import style from './Statistics.module.css';
 
 const StatItem = ({ label, percentage }) => (
   <>
-    <span className="label">{label}</span>
-    <span className="percentage">{percentage}%</span>
+    <span className={style.label}>{label}</span>
+    <span className={style.value}>{percentage}%</span>
   </>
 );
 

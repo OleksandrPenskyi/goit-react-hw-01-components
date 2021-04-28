@@ -1,11 +1,12 @@
 import React from 'react';
+import style from './TransactionHistory.module.css';
 
 const THead = () => (
-  <thead>
+  <thead className={style.thead}>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <th className={style.th}>Type</th>
+      <th className={style.th}>Amount</th>
+      <th className={style.th}>Currency</th>
     </tr>
   </thead>
 );

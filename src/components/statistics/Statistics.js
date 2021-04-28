@@ -1,13 +1,12 @@
 import React from 'react';
 import StatTitle from './StatTitle';
 import StatList from './StatList';
+import style from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
-  <section className="statistics">
-    {/* Если приходит title, то генерим разметку h2 */}
+  <section className={style.section}>
     {title && <StatTitle title={title} />}
 
-    {/* Генерим Список */}
     <StatList stats={stats} />
   </section>
 );

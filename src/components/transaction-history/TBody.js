@@ -1,10 +1,11 @@
 import React from 'react';
 import TransactionItem from './TransactionItem';
+import style from './TransactionHistory.module.css';
 
 const TBody = ({ transaction }) => (
   <tbody>
     {transaction.map(({ id, type, amount, currency }) => (
-      <tr key={id}>
+      <tr className={style.tr} key={id}>
         <TransactionItem type={type} amount={amount} currency={currency} />
       </tr>
     ))}

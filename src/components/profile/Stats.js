@@ -1,18 +1,19 @@
-import React from 'react';
+import React from "react";
+import styles from "./Profile.module.css";
 
 const Stats = ({ followers, views, likes }) => (
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
+  <ul className={styles.statsList}>
+    <li className={styles.statsItem}>
+      <span className={styles.label}>Followers</span>
+      <span className={styles.quantity}>{followers}</span>
     </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{views}</span>
+    <li className={styles.statsItem}>
+      <span className={styles.label}>Views</span>
+      <span className={styles.quantity}>{views}</span>
     </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
+    <li className={styles.statsItem}>
+      <span className={styles.label}>Likes</span>
+      <span className={styles.quantity}>{likes}</span>
     </li>
   </ul>
 );

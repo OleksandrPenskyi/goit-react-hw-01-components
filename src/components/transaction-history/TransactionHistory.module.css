@@ -1,0 +1,42 @@
+.table {
+  width: 50%;
+
+  border-collapse: collapse;
+  line-height: 1.2;
+}
+
+.th {
+  padding: 15px 80px;
+
+  color: #fff;
+  background: #2cb0c7;
+}
+
+.th:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.tr {
+  background: #fff;
+  cursor: pointer;
+}
+
+.tr:hover .td {
+  color: #2cb0c7;
+}
+
+.tr:nth-child(2n) {
+  background: #d7dadb;
+}
+
+.td {
+  padding: 15px 80px;
+  text-align: center;
+
+  color: #595b5c;
+  border-collapse: collapse;
+}
+
+.td:not(:last-child) {
+  border-right: 1px solid #fff;
+}

@@ -1,10 +1,15 @@
-import React from 'react-dom';
+import React from "react-dom";
+import style from "./FriendList.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <>
-    <span className="status">{isOnline}</span>
-    <img className="avatar" src={avatar} alt={name} width="48" />
-    <p className="name">{name}</p>
+    {isOnline ? (
+      <span className={style.online}></span>
+    ) : (
+      <span className={style.offline}></span>
+    )}
+    <img className={style.avatar} src={avatar} alt={name} width="48" />
+    <p className={style.name}>{name}</p>
   </>
 );
 

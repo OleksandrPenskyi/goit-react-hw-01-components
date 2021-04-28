@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import styles from "./Profile.module.css";
 
 const Description = ({ name, tag, location, avatar }) => (
-  <div className="description">
-    <img src={avatar} alt="Аватар пользователя" className="avatar" />
-    <p className="name">{name}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+  <div className={styles.description}>
+    <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
+    <p className={styles.name}>{name}</p>
+    <p className={styles.tag}>@{tag}</p>
+    <p className={styles.location}>{location}</p>
   </div>
 );
 
