@@ -1,8 +1,8 @@
 import React from 'react-dom';
-import Profile from './components/profile/Profile';
-import FriendList from './components/friend-list/FriendList';
-import Statistics from './components/statistics/Statistics';
-import TransactionHistory from './components/transaction-history/TransactionHistory';
+import Profile from './components/Profile/Profile';
+import FriendList from './components/Friend-list/FriendList';
+import Statistics from './components/Statistics/Statistics';
+import TransactionHistory from './components/Transaction-history/TransactionHistory';
 import data from './data';
 
 const { friends, statisticalData, user, transaction } = data;
