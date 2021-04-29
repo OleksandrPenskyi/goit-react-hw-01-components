@@ -38,32 +38,21 @@
   font-weight: 700;
 }
 
-/* !!! */
 .status {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-/* !!! */
-.online {
   margin-right: 10px;
 
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
 
+.online {
+  composes: status;
   background: green;
 }
-/* !!! */
-.offline {
-  margin-right: 10px;
 
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+.offline {
+  composes: status;
   background: red;
 }
